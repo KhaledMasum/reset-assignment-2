@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import AllTickets from "./components/AllTickets";
+import Footer from "./components/Footer";
 
 const fetchTickets = async () => {
   const res = await fetch("/ticket-info.json");
@@ -34,6 +35,7 @@ function App() {
           ></AllTickets>
         </Suspense>
       </main>
+      <Footer></Footer>
     </div>
   );
 }
