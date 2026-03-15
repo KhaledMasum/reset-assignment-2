@@ -11,7 +11,7 @@ const Banner = ({ inProgress, resolved }) => {
           <img src={vectorThree} alt="" className="absolute right-0 top-0" />
           <div className="relative z-10">
             <p>In-Progress</p>
-            <h2 className="text-2xl font-bold">{inProgress}</h2>
+            <h2 className="text-2xl font-bold">{inProgress.length}</h2>
           </div>
         </div>
 

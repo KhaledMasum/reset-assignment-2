@@ -1,12 +1,16 @@
 import React from "react";
 import { FaCalendar } from "react-icons/fa";
+import { toast } from "react-toastify";
 
-const CustomerTickets = ({ ticketInfo }) => {
-  console.log(ticketInfo);
+const CustomerTickets = ({ ticketInfo, inProgress, setInProgress }) => {
+  const handleTicketCount = () => {
+    setInProgress([...inProgress, ticketInfo]);
+    toast("Ticket added successfully!");
+  };
 
   return (
     <div>
-      <div className="bg-white border border-gray-200 rounded-xl p-4">
+      <div className="bg-white rounded p-4" onClick={() => handleTicketCount()}>
         <div className="flex justify-between items-start mb-2">
           <h3 className="font-medium text-sm text-dark">{ticketInfo.title}</h3>
           <span

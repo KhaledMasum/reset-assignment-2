@@ -6,7 +6,7 @@
     "customer": "Rahim Ahmed",
     "priority": "High",
     "status": "Open",
-    "created_at": "2026-03-10 09:15:00"
+    "created_at": "2026-03-10"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "customer": "Nusrat Jahan",
     "priority": "High",
     "status": "In Progress",
-    "created_at": "2026-03-10 10:22:00"
+    "created_at": "2026-03-10"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "customer": "Sabbir Hossain",
     "priority": "Medium",
     "status": "Open",
-    "created_at": "2026-03-10 11:05:00"
+    "created_at": "2026-03-10"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "customer": "Tania Akter",
     "priority": "High",
     "status": "In Progress",
-    "created_at": "2026-03-10 12:40:00"
+    "created_at": "2026-03-10"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "customer": "Mahmud Hasan",
     "priority": "Low",
     "status": "Open",
-    "created_at": "2026-03-10 13:25:00"
+    "created_at": "2026-03-10"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "customer": "Fahim Chowdhury",
     "priority": "Critical",
     "status": "In Progress",
-    "created_at": "2026-03-11 08:10:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "customer": "Lamia Rahman",
     "priority": "Medium",
     "status": "Open",
-    "created_at": "2026-03-11 09:35:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "customer": "Imran Kabir",
     "priority": "High",
     "status": "In Progress",
-    "created_at": "2026-03-11 10:50:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "customer": "Sharmin Sultana",
     "priority": "Medium",
     "status": "In Progress",
-    "created_at": "2026-03-11 11:20:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "customer": "Arif Hossain",
     "priority": "High",
     "status": "Open",
-    "created_at": "2026-03-11 12:15:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "customer": "Jannat Mim",
     "priority": "Medium",
     "status": "In Progress",
-    "created_at": "2026-03-11 13:40:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "customer": "Rashed Karim",
     "priority": "Low",
     "status": "Open",
-    "created_at": "2026-03-11 14:05:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "customer": "Mehedi Hasan",
     "priority": "High",
     "status": "In Progress",
-    "created_at": "2026-03-11 15:30:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "customer": "Sadia Islam",
     "priority": "Medium",
     "status": "In Progress",
-    "created_at": "2026-03-11 16:10:00"
+    "created_at": "2026-03-11"
   },
   {
     "id": 15,
@@ -132,6 +132,6 @@
     "customer": "Tanvir Ahmed",
     "priority": "Low",
     "status": "Open",
-    "created_at": "2026-03-11 17:00:00"
+    "created_at": "2026-03-11"
   }
 ]

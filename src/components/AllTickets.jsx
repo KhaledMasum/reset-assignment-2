@@ -1,10 +1,9 @@
 import React, { use } from "react";
 import CustomerTickets from "./CustomerTickets";
+import TaskStatus from "./TaskStatus";
 
-const AllTickets = ({ ticketPromise }) => {
-  console.log(ticketPromise);
+const AllTickets = ({ ticketPromise, inProgress, setInProgress }) => {
   const ticketInfos = use(ticketPromise);
-  console.log(ticketInfos);
 
   return (
     <div className="grid md:grid-cols-3 gap-4 p-16 pt-0">
@@ -12,12 +11,17 @@ const AllTickets = ({ ticketPromise }) => {
         <h4 className="text-xl font-semibold mb-2">Customer Tickets</h4>
         <div className="grid md:grid-cols-2 gap-4">
           {ticketInfos.map((ticketInfo) => (
-            <CustomerTickets ticketInfo={ticketInfo}></CustomerTickets>
+            <CustomerTickets
+              ticketInfo={ticketInfo}
+              inProgress={inProgress}
+              setInProgress={setInProgress}
+            ></CustomerTickets>
           ))}
         </div>
       </div>
-      <div className="border">
+      <div>
         <h4 className="text-xl font-semibold mb-2">Tickets Status</h4>
+        <TaskStatus></TaskStatus>
       </div>
     </div>
   );

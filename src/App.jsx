@@ -12,16 +12,23 @@ const fetchTickets = async () => {
 const ticketPromise = fetchTickets();
 
 function App() {
-  const [inProgress, setInProgress] = useState(0);
+  const [inProgress, setInProgress] = useState([]);
   const [resolved, setResolved] = useState(0);
+
+  console.log(inProgress);
+
   return (
     <div>
       <Navbar></Navbar>
-      <main className="bg-[627382]">
+      <main className="bg-gray-100">
         <Banner inProgress={inProgress} resolved={resolved}></Banner>
 
         <Suspense fallback={<p>Loading...</p>}>
-          <AllTickets ticketPromise={ticketPromise}></AllTickets>
+          <AllTickets
+            ticketPromise={ticketPromise}
+            inProgress={inProgress}
+            setInProgress={setInProgress}
+          ></AllTickets>
         </Suspense>
       </main>
     </div>
