@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Unable to login to account",
+    "description": "Customer reports that login fails even with correct credentials.",
+    "customer": "Rahim Ahmed",
+    "priority": "High",
+    "status": "Open",
+    "created_at": "2026-03-10 09:15:00"
+  },
+  {
+    "id": 2,
+    "title": "Payment not reflected",
+    "description": "Customer completed payment but it is not showing in the account dashboard.",
+    "customer": "Nusrat Jahan",
+    "priority": "High",
+    "status": "In Progress",
+    "created_at": "2026-03-10 10:22:00"
+  },
+  {
+    "id": 3,
+    "title": "Password reset email not received",
+    "description": "Customer requested password reset but did not receive the email.",
+    "customer": "Sabbir Hossain",
+    "priority": "Medium",
+    "status": "Open",
+    "created_at": "2026-03-10 11:05:00"
+  },
+  {
+    "id": 4,
+    "title": "Incorrect invoice generated",
+    "description": "Invoice shows incorrect product quantity and total amount.",
+    "customer": "Tania Akter",
+    "priority": "High",
+    "status": "In Progress",
+    "created_at": "2026-03-10 12:40:00"
+  },
+  {
+    "id": 5,
+    "title": "Feature request for dark mode",
+    "description": "Customer suggested adding a dark mode option in the dashboard.",
+    "customer": "Mahmud Hasan",
+    "priority": "Low",
+    "status": "Open",
+    "created_at": "2026-03-10 13:25:00"
+  },
+  {
+    "id": 6,
+    "title": "App crashes on startup",
+    "description": "Mobile application crashes immediately after opening.",
+    "customer": "Fahim Chowdhury",
+    "priority": "Critical",
+    "status": "In Progress",
+    "created_at": "2026-03-11 08:10:00"
+  },
+  {
+    "id": 7,
+    "title": "Unable to upload profile picture",
+    "description": "Customer gets an error when trying to upload a profile image.",
+    "customer": "Lamia Rahman",
+    "priority": "Medium",
+    "status": "Open",
+    "created_at": "2026-03-11 09:35:00"
+  },
+  {
+    "id": 8,
+    "title": "Subscription cancellation issue",
+    "description": "Customer unable to cancel subscription from account settings.",
+    "customer": "Imran Kabir",
+    "priority": "High",
+    "status": "In Progress",
+    "created_at": "2026-03-11 10:50:00"
+  },
+  {
+    "id": 9,
+    "title": "Slow dashboard loading",
+    "description": "Customer reports dashboard takes too long to load.",
+    "customer": "Sharmin Sultana",
+    "priority": "Medium",
+    "status": "In Progress",
+    "created_at": "2026-03-11 11:20:00"
+  },
+  {
+    "id": 10,
+    "title": "Notification emails not sending",
+    "description": "System notifications are not being sent to the customer email.",
+    "customer": "Arif Hossain",
+    "priority": "High",
+    "status": "Open",
+    "created_at": "2026-03-11 12:15:00"
+  },
+  {
+    "id": 11,
+    "title": "Data export not working",
+    "description": "Customer unable to export reports as CSV or Excel.",
+    "customer": "Jannat Mim",
+    "priority": "Medium",
+    "status": "In Progress",
+    "created_at": "2026-03-11 13:40:00"
+  },
+  {
+    "id": 12,
+    "title": "UI alignment issue on mobile",
+    "description": "Buttons overlap on smaller mobile screens.",
+    "customer": "Rashed Karim",
+    "priority": "Low",
+    "status": "Open",
+    "created_at": "2026-03-11 14:05:00"
+  },
+  {
+    "id": 13,
+    "title": "Two-factor authentication problem",
+    "description": "Customer cannot verify OTP during login.",
+    "customer": "Mehedi Hasan",
+    "priority": "High",
+    "status": "In Progress",
+    "created_at": "2026-03-11 15:30:00"
+  },
+  {
+    "id": 14,
+    "title": "Duplicate ticket creation",
+    "description": "System creates duplicate tickets when customer submits form.",
+    "customer": "Sadia Islam",
+    "priority": "Medium",
+    "status": "In Progress",
+    "created_at": "2026-03-11 16:10:00"
+  },
+  {
+    "id": 15,
+    "title": "Language translation issue",
+    "description": "Some texts are not properly translated in Bangla language mode.",
+    "customer": "Tanvir Ahmed",
+    "priority": "Low",
+    "status": "Open",
+    "created_at": "2026-03-11 17:00:00"
+  }
+]
