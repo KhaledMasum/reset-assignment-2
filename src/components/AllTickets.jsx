@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import CustomerTickets from "./CustomerTickets";
 import TaskStatus from "./TaskStatus";
 import ResolvedTicket from "./ResolvedTicket";
@@ -11,15 +11,16 @@ const AllTickets = ({
   setResolvedTickets,
 }) => {
   const ticketInfos = use(ticketPromise);
+  const [allTickets, setAllTickets] = useState(ticketInfos);
 
   return (
     <div className="grid md:grid-cols-3 gap-4 p-16 pt-0">
       <div className="col-span-2">
         <h4 className="text-xl font-semibold mb-2">Customer Tickets</h4>
         <div className="grid md:grid-cols-2 gap-4">
-          {ticketInfos.map((ticketInfo) => (
+          {allTickets.map((allTicket) => (
             <CustomerTickets
-              ticketInfo={ticketInfo}
+              allTicket={allTicket}
               selectedTickets={selectedTickets}
               setSelectedTickets={setSelectedTickets}
             ></CustomerTickets>
@@ -36,6 +37,8 @@ const AllTickets = ({
               setResolvedTickets={setResolvedTickets}
               selectedTickets={selectedTickets}
               setSelectedTickets={setSelectedTickets}
+              allTickets={allTickets}
+              setAllTickets={setAllTickets}
             ></TaskStatus>
           ))
         ) : (

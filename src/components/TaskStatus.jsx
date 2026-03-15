@@ -7,16 +7,24 @@ const TaskStatus = ({
   setResolvedTickets,
   selectedTickets,
   setSelectedTickets,
+  allTickets,
+  setAllTickets,
 }) => {
   const handleResolveTicket = () => {
     setResolvedTickets([...resolvedTickets, selectedTicket]);
     toast.success("Ticket resolved!");
 
+    // Update resolve tickets
     const updateInProgress = selectedTickets.filter(
       (ticket) => ticket.id !== selectedTicket.id,
     );
-
     setSelectedTickets(updateInProgress);
+
+    // Update All tickets
+    const remainingTickets = allTickets.filter(
+      (allTicket) => allTicket.id !== selectedTicket.id,
+    );
+    setAllTickets(remainingTickets);
   };
 
   return (
