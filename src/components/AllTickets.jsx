@@ -14,9 +14,9 @@ const AllTickets = ({
   const [allTickets, setAllTickets] = useState(ticketInfos);
 
   return (
-    <div className="grid md:grid-cols-3 gap-4 p-16 pt-0">
-      <div className="col-span-2">
-        <h4 className="text-xl font-semibold mb-2">Customer Tickets</h4>
+    <div className="grid md:grid-cols-3 gap-4 p-4 md:pt-0 md:px-16">
+      <div className="md:col-span-2">
+        <h4 className="text-xl font-semibold my-2 md:mt-0">Customer Tickets</h4>
         <div className="grid md:grid-cols-2 gap-4">
           {allTickets.map((allTicket) => (
             <CustomerTickets
@@ -28,7 +28,7 @@ const AllTickets = ({
         </div>
       </div>
       <div>
-        <h4 className="text-xl font-semibold mb-2">Tickets Status</h4>
+        <h4 className="text-xl font-semibold my-2 md:mt-0">Tickets Status</h4>
         {selectedTickets.length > 0 ? (
           selectedTickets.map((selectedTicket) => (
             <TaskStatus

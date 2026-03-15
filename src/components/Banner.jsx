@@ -4,8 +4,8 @@ import vectorThree from "../assets/images/vector3.png";
 
 const Banner = ({ selectedTickets, resolvedTickets }) => {
   return (
-    <div className="p-16">
-      <div className="grid grid-cols-2 gap-4">
+    <div className="md:p-16">
+      <div className="md:grid grid-cols-2 gap-4">
         <div className="relative py-16 text-center text-white overflow-hidden bg-[linear-gradient(to_right,#632EE3,#9F62F2)]">
           <img src={vectorOne} alt="" className="absolute left-0 top-0" />
           <img src={vectorThree} alt="" className="absolute right-0 top-0" />
