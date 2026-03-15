@@ -2,9 +2,13 @@ import React from "react";
 import { FaCalendar } from "react-icons/fa";
 import { toast } from "react-toastify";
 
-const CustomerTickets = ({ ticketInfo, inProgress, setInProgress }) => {
+const CustomerTickets = ({
+  ticketInfo,
+  selectedTickets,
+  setSelectedTickets,
+}) => {
   const handleTicketCount = () => {
-    setInProgress([...inProgress, ticketInfo]);
+    setSelectedTickets([...selectedTickets, ticketInfo]);
     toast("Ticket added successfully!");
   };
 

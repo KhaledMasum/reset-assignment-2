@@ -2,7 +2,7 @@ import React, { use } from "react";
 import CustomerTickets from "./CustomerTickets";
 import TaskStatus from "./TaskStatus";
 
-const AllTickets = ({ ticketPromise, inProgress, setInProgress }) => {
+const AllTickets = ({ ticketPromise, selectedTickets, setSelectedTickets }) => {
   const ticketInfos = use(ticketPromise);
 
   return (
@@ -13,15 +13,25 @@ const AllTickets = ({ ticketPromise, inProgress, setInProgress }) => {
           {ticketInfos.map((ticketInfo) => (
             <CustomerTickets
               ticketInfo={ticketInfo}
-              inProgress={inProgress}
-              setInProgress={setInProgress}
+              selectedTickets={selectedTickets}
+              setSelectedTickets={setSelectedTickets}
             ></CustomerTickets>
           ))}
         </div>
       </div>
       <div>
         <h4 className="text-xl font-semibold mb-2">Tickets Status</h4>
-        <TaskStatus></TaskStatus>
+        {selectedTickets.length > 0 ? (
+          selectedTickets.map((selectedTicket) => (
+            <TaskStatus selectedTicket={selectedTicket}></TaskStatus>
+          ))
+        ) : (
+          <p className="text-xs text-gray-600 mb-2">
+            Select a ticket to add to Task Status
+          </p>
+        )}
+        <h4 className="text-xl font-semibold mb-2">Resolved Task</h4>
+        <p className="text-xs text-gray-600 mb-2">No resolved Tasks Yet</p>
       </div>
     </div>
   );
