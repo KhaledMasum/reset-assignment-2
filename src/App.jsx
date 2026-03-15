@@ -13,19 +13,24 @@ const ticketPromise = fetchTickets();
 
 function App() {
   const [selectedTickets, setSelectedTickets] = useState([]);
-  const [resolved, setResolved] = useState(0);
+  const [resolvedTickets, setResolvedTickets] = useState([]);
 
   return (
     <div>
       <Navbar></Navbar>
       <main className="bg-gray-100">
-        <Banner selectedTickets={selectedTickets} resolved={resolved}></Banner>
+        <Banner
+          selectedTickets={selectedTickets}
+          resolvedTickets={resolvedTickets}
+        ></Banner>
 
         <Suspense fallback={<p>Loading...</p>}>
           <AllTickets
             ticketPromise={ticketPromise}
             selectedTickets={selectedTickets}
             setSelectedTickets={setSelectedTickets}
+            resolvedTickets={resolvedTickets}
+            setResolvedTickets={setResolvedTickets}
           ></AllTickets>
         </Suspense>
       </main>

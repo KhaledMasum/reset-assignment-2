@@ -2,7 +2,7 @@ import React from "react";
 import vectorOne from "../assets/images/vector1.png";
 import vectorThree from "../assets/images/vector3.png";
 
-const Banner = ({ selectedTickets, resolved }) => {
+const Banner = ({ selectedTickets, resolvedTickets }) => {
   return (
     <div className="p-16">
       <div className="grid grid-cols-2 gap-4">
@@ -20,12 +20,10 @@ const Banner = ({ selectedTickets, resolved }) => {
           <img src={vectorThree} alt="" className="absolute right-0 top-0" />
           <div className="relative z-10">
             <p>Resolved</p>
-            <h2 className="text-2xl font-bold">{resolved}</h2>
+            <h2 className="text-2xl font-bold">{resolvedTickets.length}</h2>
           </div>
         </div>
       </div>
-
-      {/* <img src={vectorTwo} alt="" /> */}
     </div>
   );
 };
